@@ -21,13 +21,14 @@
 | SQLite     | SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine                                                                                                     | :doc:`Phalcon\\Db\\Adapter\\Pdo\\Sqlite <../api/Phalcon_Db_Adapter_Pdo_Sqlite>`         |
 +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
-Implementing your own adapters
+实现你自己的适配器
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The :doc:`Phalcon\\Db\\AdapterInterface <../api/Phalcon_Db_AdapterInterface>` interface must be implemented in order to create your own database adapters or extend the existing ones.
+:doc:`Phalcon\\Db\\AdapterInterface <../api/Phalcon_Db_AdapterInterface>` 接口必须被实现,用来创建你自己的数据库适配器.或者继承一个现有的适配器.
 
 Database Dialects
 -----------------
-Phalcon encapsulates the specific details of each database engine in dialects. Those provide common functions and SQL generator to the adapters.
+通俗的说,Phalcon封装了每个数据库引擎的具体细节.那些东西为适配器提供了通用的函数和SQL生成器.
+
 
 +------------+-----------------------------------------------------+--------------------------------------------------------------------------------+
 | Name       | Description                                         | API                                                                            |
