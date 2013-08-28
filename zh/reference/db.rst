@@ -1,15 +1,15 @@
-Database Abstraction Layer
+数据库抽象层
 ==========================
-:doc:`Phalcon\\Db <../api/Phalcon_Db>` is the component behind :doc:`Phalcon\\Mvc\\Model <../api/Phalcon_Mvc_Model>` that powers the model layer in the framework. It consists of an independent high-level abstraction layer for database systems completely written in C.
+:doc:`Phalcon\\Db <../api/Phalcon_Db>` 是 :doc:`Phalcon\\Mvc\\Model <../api/Phalcon_Mvc_Model>`后的组件,用于强化框架中的模型层(Model). 它是由一个独立的高级的完全由c语言写成的抽象层组成的. 
 
-This component allows for a lower level database manipulation than using traditional models.
+这个组件允许比传统模型更低级的数据库操作.
 
 .. highlights::
-    This guide is not intended to be a complete documentation of available methods and their arguments. Please visit the :doc:`API <../api/index>` for a complete reference.
+    这个指南并不是旨在变成一个介绍方法和参数的完整文档.更多详细完整的参考资料请参阅 :doc:`API <../api/index>`
 
-Database Adapters
+数据库适配器
 -----------------
-This component makes use of adapters to encapsulate specific database system details. Phalcon uses PDO_ to connect to databases. The following database engines are supported:
+这个组件利用适配器来封装具体的数据库系统的细节部分.Phalcon用PDO来连接数据库.下面是被支持的数据库引擎:
 
 +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 | Name       | Description                                                                                                                                                                                                                          | API                                                                                     |
@@ -39,7 +39,7 @@ Phalcon encapsulates the specific details of each database engine in dialects. T
 | SQLite     | SQL specific dialect for SQLite database system     | :doc:`Phalcon\\Db\\Dialect\\Sqlite <../api/Phalcon_Db_Dialect_Sqlite>`         |
 +------------+-----------------------------------------------------+--------------------------------------------------------------------------------+
 
-Connecting to Databases
+连接到数据库
 -----------------------
 To create a connection it's neccesary instantiate the adapter class. It only requires an array with the connection parameters. The example
 below shows how to create a connection passing both required and optional parameters:
